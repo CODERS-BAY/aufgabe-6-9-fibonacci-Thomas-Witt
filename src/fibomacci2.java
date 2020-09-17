@@ -12,10 +12,8 @@ public class fibomacci2 {
     }
 
     public static int calculateFibonacci(int indicator) {
-        if (indicator == 0) {
-            return 0;
-        } else if (indicator == 1) {
-            return 1;
+        if (indicator == 0 || indicator == 1) {
+            return indicator;
         }
         return calculateFibonacci(indicator - 2) + calculateFibonacci(indicator - 1);
     }
